@@ -1,11 +1,29 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Technologies from "./components/Technologies";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline text-white">
-        Hello, Tailwind CSS with Vite!
-      </h1>
-    </div>
-  )
-}
+    <div className="overflow-x-hidden text-stone-300 antialiased">
+      {/* Half-Round Gradient from the Right Side */}
+      <div
+        className="fixed inset-0 -z-10"
+        style={{
+          background: "radial-gradient(circle at right, #4f4f4f, #1a1a1a, #000000)",
+        }}
+      ></div>
 
-export default App
+      {/* Main Content with Navbar */}
+      <div className="container mx-auto px-8">
+        <Navbar />
+        <Hero />
+        <Technologies/>
+        <Projects />
+        <Experience />
+      </div>
+    </div>
+  );
+};
+
+export default App;
