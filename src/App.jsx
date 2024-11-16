@@ -3,6 +3,9 @@ import Hero from "./components/Hero";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+
 const App = () => {
   return (
     <div className="overflow-x-hidden text-stone-300 antialiased">
@@ -20,7 +23,9 @@ const App = () => {
         <Hero />
         <Technologies/>
         <Projects />
+        <Education />
         <Experience />
+        <Contact />
       </div>
     </div>
   );
